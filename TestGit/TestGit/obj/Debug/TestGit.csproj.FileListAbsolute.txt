@@ -6,3 +6,11 @@ D:\git\github\TestGit\TestGit\obj\Debug\TestGit.csprojAssemblyReference.cache
 D:\git\github\TestGit\TestGit\obj\Debug\TestGit.csproj.CoreCompileInputs.cache
 D:\git\github\TestGit\TestGit\obj\Debug\TestGit.exe
 D:\git\github\TestGit\TestGit\obj\Debug\TestGit.pdb
+D:\git\github\helloworld\TestGit\TestGit\bin\Debug\TestGit.exe.config
+D:\git\github\helloworld\TestGit\TestGit\bin\Debug\TestGit.exe
+D:\git\github\helloworld\TestGit\TestGit\bin\Debug\TestGit.pdb
+D:\git\github\helloworld\TestGit\TestGit\obj\Debug\TestGit.csproj.CoreCompileInputs.cache
+D:\git\github\helloworld\TestGit\TestGit\obj\Debug\TestGit.exe
+D:\git\github\helloworld\TestGit\TestGit\obj\Debug\TestGit.pdb
+D:\git\github\helloworld\TestGit\TestGit\obj\Debug\GitInfo.cache
+D:\git\github\helloworld\TestGit\TestGit\obj\Debug\TestGit.csprojAssemblyReference.cache

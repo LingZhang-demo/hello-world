@@ -32,29 +32,29 @@ namespace
     /// <summary>Provides access to the git information for the current assembly.</summary>
     public partial class Git
     {
-      /// <summary>IsDirty: false</summary>
-      public const bool IsDirty = false;
+      /// <summary>IsDirty: $GitIsDirty$</summary>
+      public const bool IsDirty = $GitIsDirty$;
 
-      /// <summary>IsDirtyString: false</summary>
-      public const string IsDirtyString = "false";
+      /// <summary>IsDirtyString: $GitIsDirty$</summary>
+      public const string IsDirtyString = "$GitIsDirty$";
 
       /// <summary>Branch: master</summary>
       public const string Branch = "master";
 
-      /// <summary>Commit: </summary>
-      public const string Commit = "";
+      /// <summary>Commit: be2e9a9</summary>
+      public const string Commit = "be2e9a9";
 
-      /// <summary>Sha: </summary>
-      public const string Sha = "";
+      /// <summary>Sha: be2e9a900dd2642da756e98d695d148ea8e8bf24</summary>
+      public const string Sha = "be2e9a900dd2642da756e98d695d148ea8e8bf24";
 
-      /// <summary>Commits on top of base version: 0</summary>
-      public const string Commits = "0";
+      /// <summary>Commits on top of base version: 8</summary>
+      public const string Commits = "8";
 
-      /// <summary>Tag: </summary>
-      public const string Tag = "";
+      /// <summary>Tag: testTag-4-gbe2e9a9</summary>
+      public const string Tag = "testTag-4-gbe2e9a9";
 
-      /// <summary>Base tag: </summary>
-      public const string BaseTag = "";
+      /// <summary>Base tag: testTag</summary>
+      public const string BaseTag = "testTag";
 
       /// <summary>Provides access to the base version information used to determine the <see cref="SemVer" />.</summary>      
       public partial class BaseVersion
@@ -78,8 +78,8 @@ namespace
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
 
-        /// <summary>Patch: 0</summary>
-        public const string Patch = "0";
+        /// <summary>Patch: 8</summary>
+        public const string Patch = "8";
 
         /// <summary>Label: </summary>
         public const string Label = "";

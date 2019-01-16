@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -59,5 +60,17 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\GitInfo.2.0.20\build\GitInfo.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\GitInfo.2.0.20\build\GitInfo.targets'))" />
+  </Target>
+  <Target Name="TestGit" BeforeTargets="PrepareForBuild">
+    <GitCommits LocalPath="$(MSBuildProjectDirectory)\TestAddFolder">
+      <Output TaskParameter="CommitsCount" PropertyName="CommitsCount"/>
+    </GitCommits>
+    <Message Text="CommitCount: $(CommitsCount)" />
+    <Message Text="MSBuildProjectDirectory: $(MSBuildProjectDirectory)\TestAddFolder" />
+    <GitCommits LocalPath="$(MSBuildProjectDirectory)\Program.cs">
+      <Output TaskParameter="CommitsCount" PropertyName="CommitsCount"/>
+    </GitCommits>
+    <Message Text="CommitCount: $(CommitsCount)" />
+    <Message Text="MSBuildProjectDirectory: $(MSBuildProjectDirectory)\Program.cs" />
   </Target>
 </Project>
